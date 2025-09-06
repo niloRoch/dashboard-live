@@ -48,7 +48,7 @@
                 grid-row: 1;
             }
             
-            .progress-panel {
+            .system-panel {
                 grid-column: 1;
                 grid-row: 2;
             }
@@ -91,7 +91,7 @@
             position: relative;
         }
 
-        .progress-panel {
+        .system-panel {
             grid-column: 2;
             grid-row: 1;
         }
@@ -575,9 +575,23 @@
             <div class="floating-particles" style="top: 30%; left: 90%; animation-delay: 4s;"></div>
         </div>
 
-        <!-- Progress Panel -->
-        <div class="panel progress-panel neon-border">
-            <div class="panel-title">⏳ TEMPORAL SYNCHRONIZATION</div>
+        <!-- System Panel (renamed from Progress Panel) -->
+        <div class="panel system-panel neon-border">
+            <div class="panel-title">⚡ System Resources</div>
+            <div class="progress-bar">
+                <span class="progress-label">📊 RAM USAGE</span>
+                <div class="progress-track">
+                    <div class="progress-fill" id="ramUsage" style="width: 68%"></div>
+                </div>
+                <span class="progress-value" id="ramPercent">68%</span>
+            </div>
+            <div class="progress-bar">
+                <span class="progress-label">🔥 CPU USAGE</span>
+                <div class="progress-track">
+                    <div class="progress-fill" id="cpuUsage" style="width: 45%"></div>
+                </div>
+                <span class="progress-value" id="cpuPercent">45%</span>
+            </div>
             <div class="progress-bar">
                 <span class="progress-label">🌍 YEAR CYCLE</span>
                 <div class="progress-track">
@@ -586,25 +600,11 @@
                 <span class="progress-value" id="yearPercent">0%</span>
             </div>
             <div class="progress-bar">
-                <span class="progress-label">☀️ SOLAR CYCLE</span>
+                <span class="progress-label">☀️ DAY CYCLE</span>
                 <div class="progress-track">
                     <div class="progress-fill" id="dayProgress" style="width: 0%"></div>
                 </div>
                 <span class="progress-value" id="dayPercent">0%</span>
-            </div>
-            <div class="progress-bar">
-                <span class="progress-label">⚡ POWER CYCLE</span>
-                <div class="progress-track">
-                    <div class="progress-fill" id="hourProgress" style="width: 0%"></div>
-                </div>
-                <span class="progress-value" id="hourPercent">0%</span>
-            </div>
-            <div class="progress-bar">
-                <span class="progress-label">💫 QUANTUM SYNC</span>
-                <div class="progress-track">
-                    <div class="progress-fill" id="minuteProgress" style="width: 0%"></div>
-                </div>
-                <span class="progress-value" id="minutePercent">0%</span>
             </div>
             
             <!-- Hacker terminal effect -->
@@ -617,6 +617,20 @@
         <div class="panel time-panel hologram-effect">
             <div class="panel-title">🕐 UNIVERSAL COORDINATES</div>
             <div class="time-display glitch-effect" id="utcTime">00:00:00</div>
+            <div class="progress-bar">
+                <span class="progress-label">⚡ HOUR CYCLE</span>
+                <div class="progress-track">
+                    <div class="progress-fill" id="hourProgress" style="width: 0%"></div>
+                </div>
+                <span class="progress-value" id="hourPercent">0%</span>
+            </div>
+            <div class="progress-bar">
+                <span class="progress-label">💫 MINUTE CYCLE</span>
+                <div class="progress-track">
+                    <div class="progress-fill" id="minuteProgress" style="width: 0%"></div>
+                </div>
+                <span class="progress-value" id="minutePercent">0%</span>
+            </div>
             <div class="status-bar">
                 <span>🛰️ GPS: LOCKED</span>
                 <span>🔗 SYNC: ACTIVE</span>
@@ -645,26 +659,24 @@
                 </div>
             </div>
 
-            <!-- System Resources -->
+            <!-- Memory Panel -->
             <div class="panel">
-                <div class="panel-title">⚡ System Resources</div>
-                <div class="progress-bar">
-                    <span class="progress-label">📊 RAM USAGE</span>
-                    <div class="progress-track">
-                        <div class="progress-fill" id="ramUsage" style="width: 68%"></div>
-                    </div>
-                    <span class="progress-value" id="ramPercent">68%</span>
-                </div>
-                <div class="progress-bar">
-                    <span class="progress-label">🔥 CPU USAGE</span>
-                    <div class="progress-track">
-                        <div class="progress-fill" id="cpuUsage" style="width: 45%"></div>
-                    </div>
-                    <span class="progress-value" id="cpuPercent">45%</span>
-                </div>
+                <div class="panel-title">💾 Memory Status</div>
                 <div class="metric-item">
                     <span class="metric-label">💾 MEMORY</span>
                     <span class="metric-value">12.4GB / 32GB</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">📋 SWAP</span>
+                    <span class="metric-value">2.1GB / 8GB</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">⚡ CACHE</span>
+                    <span class="metric-value">4.2GB</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">🔄 BUFFER</span>
+                    <span class="metric-value">1.8GB</span>
                 </div>
             </div>
 
