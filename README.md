@@ -100,12 +100,6 @@ python -m http.server 8000
 # Live Server (VS Code), XAMPP, NGINX, etc.
 ```
 
-### Uso
-1. Abra `index.html` no navegador ou acesse via servidor local
-2. O dashboard carregará automaticamente todos os widgets
-3. Os dados são atualizados em tempo real
-4. Personalize os widgets conforme necessário
-
 ## 📁 **Estrutura do Projeto**
 
 ```
@@ -205,13 +199,6 @@ const CONFIG = {
 ## 📝 **Licença**
 
 Este projeto está licenciado sob a **MIT License**. Veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 🌟 **Agradecimentos**
-
-- **Chart.js** pela excelente biblioteca de gráficos
-- **OpenWeatherMap** pelos dados meteorológicos
-- **CoinGecko** pelos dados de criptomoedas
-- Comunidade open source pelas inspirações
 
 ## 📞 **Contato**
 
